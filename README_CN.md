@@ -1,41 +1,39 @@
-# SENZ012-VL53L0X-ToF-Laser-Range-Finder
+# SENZ012 VL53L0X ToF 激光测距传感器
 
-###### Translation
+###### 翻译
 
-> For `English`, please click [`here.`](https://github.com/njustcjj/SENZ012-VL53L0X-ToF-Laser-Range-Finder/blob/master/README.md)
+> `英文` 请参考 [`这里`](https://github.com/njustcjj/SENZ011-Environment-Light-Sensor/blob/master/README.md)
 
-> For `Chinese`, please click [`here.`](https://github.com/njustcjj/SENZ012-VL53L0X-ToF-Laser-Range-Finder/blob/master/README_CN.md)
+> `中文` 请参考 [`这里`](https://github.com/njustcjj/SENZ011-Environment-Light-Sensor/blob/master/README_CN.md)
 
-![](https://github.com/njustcjj/SENZ012-VL53L0X-ToF-Laser-Range-Finder/blob/master/pic/SENZ012.jpg "SENZ012")
+![](https://github.com/njustcjj/SENZ011-Environment-Light-Sensor/blob/master/pic/SENZ010.jpg "SENZ010")
+ 
 
+### 产品介绍
 
-### Introduction
+> SENZ012 VL53L0X激光测距传感器是一款基于意法半导体（STMicroelectronics）新出的基于飞行时间测距 (ToF) 原理设计的高精度测距传感器。与传统的技术不同，VL53L0X无论目标反射率如何，都能提供精确的距离测量，最高测量距离2米。
 
-> The SENZ012 VL53L0X range finder is a high-precision distance finder that based on new Time-of-Flight (ToF) principle. VL53L0X provides accurate distance measurement whatever the target reflectance unlike traditional technology. It can measure absolute distances up to 2m.
+VL53L0X集成了尖端的SPAD (Single Photon Avalanche Diodes) 阵列，并嵌入ST的第二代FlightSenseTM专利技术。精度达±3%，响应时间小于30ms，正常工作模式下功耗仅20mW，待机功耗为5uA。
+VL53L0X的940nm VCSEL发射器（垂直腔面发射激光器）对人眼来说是完全不可见的，加上内部物理红外滤波器，它可以实现更远的距离，更强的抗环境光的能力，以及更好的覆盖玻璃光学截面。
 
-The VL53L0X integrates a leading-edge SPAD array (Single Photon Avalanche Diodes) and embeds ST’s second generation FlightSenseTM patented technology. Its accuracy is ±3%, response time is less than 30ms, power consumption is only 20mW in normal operation mode, stand-by power consumption is 5uA.
+> 
+> 用途：拍照系统自动对焦、接近检测、手势感应、干手机等
 
-The VL53L0X's 940nm VCSEL emitter (vertical cavity surface emitting laser) is totally invisible to the human eye, coupled with internal physical infrared filters, it enables longer ranging distance, higher immunity to ambient light and better robustness to cover-glass optical cross-talk.
->
-> Usage : auto-focus in the photography system, gesture detection, and etc.
+### 产品参数
 
-
-
-### Specification
-
-- Power supply: +3~5V DC
-- Infrared emitter: 940nm
-- Range: 30-2000mm
-- FOV: 25°
-- Ranging Accuracy: ±3%
-- Sampling Time: ≤ 30ms
-- Operating Temperature: -20 ~ +70 °C
-- Size: 11x 14 mm
+* 供电电压：+3~5V
+- 激光波长：940 nm
+- 量程范围：30 - 2000 mm
+- 测距角度：25°
+- 测距精度：±3%
+- 测距时间：≤30 ms
+- 工作温度：-20 ~ +70 ℃
+- 产品尺寸：11 x 14 mm
 
 
-### Tutorial
+### 使用教程
 
-#### Wire Definition
+#### 引脚定义
 
 |Sensor pin|Ardunio Pin|Function Description|
 |-|:-:|-|
@@ -45,13 +43,15 @@ The VL53L0X's 940nm VCSEL emitter (vertical cavity surface emitting laser) is to
 |SDA|Analog pin|I2C bus interface data|
 
 
-![](https://github.com/njustcjj/SENZ012-VL53L0X-ToF-Laser-Range-Finder/blob/master/pic/SENZ012_pin.jpg "Pin Definition") 
+![](https://github.com/njustcjj/SENZ011-Environment-Light-Sensor/blob/master/pic/SENZ011_pin.jpg "引脚定义") 
 
-#### Connecting Diagram
 
-![](https://github.com/njustcjj/SENZ012-VL53L0X-ToF-Laser-Range-Finder/blob/master/pic/SENZ012_connect.png "Connecting Diagram") 
+#### 连线图
 
-#### Sample Code
+![](https://github.com/njustcjj/SENZ011-Environment-Light-Sensor/blob/master/pic/SENZ011_connect.png "连线图") 
+
+
+### 示例代码
 
 	#include <Wire.h>
 
@@ -200,5 +200,4 @@ The VL53L0X's 940nm VCSEL emitter (vertical cavity surface emitting laser) is to
 	}
 
 
-
-### Purchasing [*SENZ012 VL53L0X ToF Laser Range Finder*](https://www.ebay.com/).
+### 购买[*SENZ012 VL53L0X ToF 激光测距传感*](https://www.ebay.com/).
